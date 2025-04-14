@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Entzheim",
+        "lat": 48.54699,
+        "lon": 7.62794,
+        "country": "FR",
+        "project_name": "Entzheim Sports Complex Development",
+        "project_description": "A project aimed at building a multi-sport complex in Entzheim to promote local sports.",
+        "project_website": "https://example.com/entzheim-sports",
+        "sports_category": "Multi-Sport"
+    },
+    {
+        "name": "Aéroport Paris Roissy Charles de Gaulle CDG",
+        "lat": 49.00412433626132,
+        "lon": 2.5707364082336426,
+        "country": "FR",
+        "project_name": "CDG Sports Facilities Expansion",
+        "project_description": "An initiative to create sports facilities at Charles de Gaulle Airport for travelers.",
+        "project_website": "https://example.com/cdg-sports-expansion",
+        "sports_category": "Facilities"
+    },
+    {
+        "name": "Lyon St-Exupéry TGV",
+        "lat": 45.721109,
+        "lon": 5.074969,
+        "country": "FR",
+        "project_name": "Lyon Sports Arena Upgrade",
+        "project_description": "Upgrading the sports arena in Lyon for better hosting of events.",
+        "project_website": "https://example.com/lyon-arena-upgrade",
+        "sports_category": "Arena"
+    },
+    {
+        "name": "Aéroport Marseille-Provence",
+        "lat": 43.44129735202746,
+        "lon": 5.237088203430176,
+        "country": "FR",
+        "project_name": "Marseille Sports Development",
+        "project_description": "Developing new sports facilities and parks in Marseille-Provence.",
+        "project_website": "https://example.com/marseille-sports-development",
+        "sports_category": "Facilities"
+    },
+    {
+        "name": "Brussels-Airport-Zaventem",
+        "lat": 50.8985400058829,
+        "lon": 4.483022689819336,
+        "country": "BE",
+        "project_name": "Zaventem Sports Infrastructure Modernization",
+        "project_description": "Modernizing sports infrastructure at Brussels Airport for travelers.",
+        "project_website": "https://example.com/zaventem-sports-modernization",
+        "sports_category": "Infrastructure"
+    },
+    {
+        "name": "Genève",
+        "lat": 46.232376,
+        "lon": 6.112098,
+        "country": "CH",
+        "project_name": "Geneva Sports Sustainability Initiative",
+        "project_description": "A sustainability project focused on promoting eco-friendly sports events in Geneva.",
+        "project_website": "https://example.com/geneva-sports-sustainability",
+        "sports_category": "Sustainability"
+    },
+    {
+        "name": "Berlin",
+        "lat": 52.520008,
+        "lon": 13.404954,
+        "country": "DE",
+        "project_name": "Berlin Olympic Park Renovation",
+        "project_description": "Renovating the Olympic Park in Berlin to host international sporting events.",
+        "project_website": "https://example.com/berlin-olympic-renovation",
+        "sports_category": "Training"
+    },
+    {
+        "name": "Madrid",
+        "lat": 40.416775,
+        "lon": -3.703790,
+        "country": "ES",
+        "project_name": "Madrid Sports Hub Development",
+        "project_description": "Creating a central hub for various sports activities in Madrid.",
+        "project_website": "https://example.com/madrid-sports-hub",
+        "sports_category": "Multi-Sport"
+    },
+    {
+        "name": "Rome",
+        "lat": 41.902782,
+        "lon": 12.496366,
+        "country": "IT",
+        "project_name": "Rome Sports Academy",
+        "project_description": "Establishing a sports academy to train young athletes in Rome.",
+        "project_website": "https://example.com/rome-sports-academy",
+        "sports_category": "Training"
+    },
+    {
+        "name": "Amsterdam",
+        "lat": 52.3676,
+        "lon": 4.9041,
+        "country": "NL",
+        "project_name": "Amsterdam Cycling Infrastructure Project",
+        "project_description": "Improving cycling paths and facilities to promote cycling as a sport.",
+        "project_website": "https://example.com/amsterdam-cycl",
+        "sports_category": "Training"
+    }
+]

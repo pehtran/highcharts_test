@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENGSO Map</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- CUSTOM -->
+    <link href="engso_custom.css" rel="stylesheet">
+    <!-- HIGHCHARTS -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/modules/marker-clusters.js"></script>
+    <script src="https://code.highcharts.com/modules/coloraxis.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+    
+
+    <div class="container" id="app">
+        <h1 class="display-3">ENGSO MAP TEST</h1>
+        <div class="row">
+            <div class="col col-sm-6">
+                <p class="text-muted fst-italic">Tekstovni filter (npr. specificen projekt): {{ filter_text }}</p>
+                <input type="text" class="form-control" v-model="filter_text" placeholder="Type something..." />
+
+                <p class="text-muted fst-italic">Dropdown filter (npr. država):</p>
+                <select class="form-select" v-model="project_name_vue">
+                    <option value="empty"></option>
+                    <option v-for="projekt in fullData" :value="projekt.project_name">{{ projekt.project_name }}
+                    </option>
+                </select>
+
+                <p class="text-muted fst-italic">Multiselect filter (npr. področje): </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="engso_multi_all" checked
+                        @change="toggle_all('engso_multi_all')">
+                    <label class="form-check-label" for="engso_multi_all">
+                        select/deselect all
+                    </label>
+                </div>
+                <div class="form-check" v-for="value, key, index in project_multi_vue">
+                    <input class="form-check-input" type="checkbox" value="" :id="'engso_multi' + index"
+                        :checked="value" v-model="project_multi_vue[key]">
+                    <label class="form-check-label" :for="'engso_multi' + index">
+                        {{ key }}
+                    </label>
+                </div>
+
+                <!-- inicializiraj iskalnik -->
+                <p>{{ fullData_f() }}</p>
+                <p class="fw-bold">PROJEKTI NA VOLJO:</p>
+                
+                <ol>
+                    <li v-for="projekt in project_list">{{ projekt.name }}</li>
+                </ol>
+                
+            </div>
+            <div class="col col-sm-6">
+                <div id="container"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="hc_engso.js"></script>
+</body>
+
+</html>
