@@ -65,31 +65,34 @@ async function renderMap(filtered_map_data) {
             </p>
             <div style="margin-bottom: 15px;">
             {#each point.sports_category}
-                <span class="badge rounded-pill bg-primary p-2 mb-1" style="margin-right: 5px;">{this}</span>
+                <span class="badge rounded-pill bg-primary text-dark p-1 mb-1" style="margin-right: 5px;">{this}</span>
             {/each}
             {#each point.age_groups}
-                <span class="badge rounded-pill bg-secondary p-2 mb-1" style="margin-right: 5px;">{this}</span>
+                <span class="badge rounded-pill bg-secondary p-1 mb-1" style="margin-right: 5px;">{this}</span>
             {/each}
             {#each point.target_groups}
-                <span class="badge rounded-pill bg-success p-2 mb-1" style="margin-right: 5px;">{this}</span>
+                <span class="badge rounded-pill bg-success text-dark p-1 mb-1" style="margin-right: 5px;">{this}</span>
             {/each}
         </div>
             <hr>
+
+            <p style="font-size: 1.1em; line-height: 1.5; overflow-wrap: break-word;">{point.project_description}</p>
 
             <div class="fw-bold">Good practices:</div>
             <ul style="list-style-type: none; padding-left: 0;">
                   {#each point.aspects_of_good_practice}
                 <li>{this}</li>
             {/each}
-        </div>
+        
             </ul>
             
-            <p style="font-size: 1.1em; line-height: 1.5; overflow-wrap: break-word;">{point.project_description}</p>
+            
             
             <div>
               <a class="btn btn-primary mt-3 w-100" href="{point.website}" target="_blank">
                 Visit project Website
               </a>
+              </div>
             </div>
             </div>
         </div>
